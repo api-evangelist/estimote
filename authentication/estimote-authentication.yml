@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.estimote.com/cloud/oauth/
+docs: https://developer.estimote.com/cloud/oauth/
+summary:
+  types: [http, oauth2]
+  api_key_in: []
+  http_schemes: [basic, bearer]
+  oauth2_flows: [authorizationCode]
+  notes: >-
+    The Estimote Cloud API is authenticated primarily with an App ID and App Token pair
+    (created in the Apps section of Estimote Cloud) sent as HTTP Basic credentials
+    (curl -u APP_ID:APP_TOKEN). App-level OAuth 2.0 (authorization code) is available in
+    private beta for third-party apps acting on behalf of other Estimote accounts; the
+    resulting bearer access token is sent in the Authorization header.
+schemes:
+  - name: appIdTokenBasic
+    type: http
+    scheme: basic
+    description: >-
+      HTTP Basic authentication where the username is your Estimote App ID and the
+      password is your App Token. Both are issued per-app in the Apps section of Estimote
+      Cloud and act as login/password for programmatic access to your account's devices
+      and attachments.
+    source: https://forums.estimote.com/t/what-are-app-id-and-app-token-and-what-do-i-need-them-for/7066
+  - name: oauth2AuthorizationCode
+    type: oauth2
+    status: private-beta
+    flows:
+      - flow: authorizationCode
+        authorizationUrl: https://cloud.estimote.com/v1/oauth2/authorize
+        tokenUrl: https://cloud.estimote.com/v1/oauth2/access_token
+        scopes: {}
+    token_usage: 'Authorization: Bearer ACCESS_TOKEN'
+    registration: >-
+      Client ID and client secret are issued manually by Estimote (private beta) on request.
+    source: https://developer.estimote.com/cloud/oauth/
