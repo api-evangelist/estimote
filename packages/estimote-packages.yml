@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.estimote.com/
+packages:
+  - language: swift
+    registry: cocoapods
+    name: EstimoteSDK
+    url: https://cocoapods.org/pods/EstimoteSDK
+    install: "pod 'EstimoteSDK'"
+    official: true
+    repo: https://github.com/Estimote/iOS-SDK
+    description: Estimote SDK for iOS (beacon ranging, monitoring, fleet management).
+  - language: java
+    registry: maven
+    name: com.estimote:sdk
+    url: https://search.maven.org/artifact/com.estimote/sdk
+    install: "implementation 'com.estimote:sdk:1.0.3'"
+    official: true
+    repo: https://github.com/Estimote/Android-SDK
+    latest_version: 1.0.3
+    packaging: aar
+    description: Estimote SDK for Android (beacon ranging, monitoring, cloud, fleet management).
+  - language: javascript
+    registry: npm
+    name: react-native-proximity
+    url: https://www.npmjs.com/package/react-native-proximity
+    install: npm install react-native-proximity
+    official: true
+    repo: https://github.com/Estimote/react-native-proximity
+    latest_version: 3.0.0
+    description: React Native wrapper for the Estimote Proximity SDK (iOS + Android).
+notes: >-
+  Additional first-party libraries are distributed as source on GitHub rather than via a
+  package registry: iOS-Proximity-SDK, Android-Proximity-SDK, iOS/Android Indoor SDKs,
+  iOS/Android Mirror SDKs, and the newer UWB SDKs (iOS-Estimote-UWB-SDK,
+  Android-Estimote-UWB-SDK). See https://github.com/Estimote.

@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://cloud.estimote.com/docs/
+authentication:
+  style: HTTP Basic (App ID as username, App Token as password); optional OAuth 2.0 Bearer (private beta)
+  ref: authentication/estimote-authentication.yml
+base_url: https://cloud.estimote.com
+media_type: application/json
+versioning:
+  style: uri-path
+  detail: Resource-scoped version prefixes (/v1, /v2, /v3)
+  ref: lifecycle/estimote-lifecycle.yml
+idempotency:
+  supported: false
+  detail: No idempotency-key header or contract documented.
+pagination:
+  supported: unknown
+  detail: No cursor/offset pagination contract documented for the device/attachment lists.
+request_tracing:
+  request_id_header: null
+error_envelope:
+  format: Standard HTTP status codes with a JSON body; not RFC 9457 problem+json.
+  ref: null
+rate_limit_signal:
+  documented: false
+notes: >-
+  Cross-cutting conventions for the Estimote Cloud REST API derived from the public docs.
+  Because idempotency is not documented, no Idempotency pointer is emitted.

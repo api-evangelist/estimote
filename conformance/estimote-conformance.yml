@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: derived
+source: https://developer.estimote.com/cloud/oauth/
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: >-
+      Estimote Cloud documents an OAuth 2.0 Authorization Code flow
+      (authorize + access_token endpoints, Bearer token usage).
+  - id: http-basic-auth
+    conforms: true
+    evidence: App ID + App Token sent as HTTP Basic credentials.
+  - id: oidc
+    conforms: false
+    evidence: No OpenID Connect discovery document or id_token issuance documented.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: >-
+      API returns standard HTTP status codes with JSON bodies; no application/problem+json
+      error format documented.
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: No valid /.well-known/security.txt published.
+  - id: json-api
+    conforms: false
+  - id: fhir-r4
+    conforms: false
+  - id: scim
+    conforms: false

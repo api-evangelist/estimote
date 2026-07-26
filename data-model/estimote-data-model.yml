@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://cloud.estimote.com/docs/
+note: >-
+  Estimote publishes no OpenAPI; this entity graph is derived from the documented Cloud
+  REST resources (devices, attachments, events) and the Apps/account model.
+entities:
+  - name: Device
+    description: A physical Estimote device (Proximity/Location/LTE/UWB beacon) registered to an account.
+    id_field: identifier
+    endpoint: /v2/devices
+  - name: Attachment
+    description: Custom key/value data (payload) associated with a device via the cloud.
+    id_field: id
+    endpoint: /v3/attachments
+  - name: DeviceEvent
+    description: An event reported by an LTE Beacon to Estimote Cloud.
+    endpoint: getDeviceEvents
+  - name: App
+    description: An application credential pair (App ID + App Token) that authorizes account access.
+relationships:
+  - from: Attachment
+    to: Device
+    kind: belongs_to
+    via: deviceIdentifier
+  - from: DeviceEvent
+    to: Device
+    kind: belongs_to
+    via: identifier
+  - from: Device
+    to: Attachment
+    kind: has_many
+    via: deviceIdentifier

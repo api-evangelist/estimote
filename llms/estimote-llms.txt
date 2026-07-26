@@ -1,0 +1,31 @@
+# Estimote
+
+> Estimote builds Bluetooth, UWB and LTE proximity/location beacons and the Estimote Cloud
+> platform for managing them. The Estimote Cloud REST API lets developers list and configure
+> devices, attach contextual key/value data to beacons, and receive events from LTE beacons,
+> while native SDKs (iOS, Android, React Native, UWB) provide proximity, indoor location and
+> fleet-management on device.
+
+## APIs
+- [Estimote Cloud API](https://cloud.estimote.com/docs/): REST API for device management, attachments, and device events. Base URL https://cloud.estimote.com.
+- [Estimote Cloud OAuth](https://developer.estimote.com/cloud/oauth/): OAuth 2.0 authorization-code flow (private beta) for third-party apps.
+
+## Docs
+- [Developer Portal](https://developer.estimote.com/): Intro to Estimote APIs, SDKs and beacon guides.
+- [Cloud API Reference](https://cloud.estimote.com/docs/): apiDoc reference for devices, attachments and LTE endpoints.
+- [Authentication](https://developer.estimote.com/cloud/oauth/): App ID + App Token (HTTP Basic) and OAuth 2.0.
+- [LTE Beacon: Cloud code & APIs](https://developer.estimote.com/lte-beacon/cloud-code-and-apis/): Cloud code and event handling for LTE beacons.
+- [Fleet management](https://developer.estimote.com/managing-beacons/fleet-management/): Programmatic device settings and updates.
+
+## SDKs
+- [iOS SDK](https://github.com/Estimote/iOS-SDK) (CocoaPods: EstimoteSDK)
+- [Android SDK](https://github.com/Estimote/Android-SDK) (Maven: com.estimote:sdk)
+- [react-native-proximity](https://www.npmjs.com/package/react-native-proximity) (npm)
+- [iOS UWB SDK](https://github.com/Estimote/iOS-Estimote-UWB-SDK)
+- [Android UWB SDK](https://github.com/Estimote/Android-Estimote-UWB-SDK)
+
+## Optional
+- [GitHub organization](https://github.com/Estimote)
+- [Blog](https://blog.estimote.com/)
+- [Community forums](https://forums.estimote.com/)
+- [Pricing](https://estimote.com/pricing)

@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/ on Estimote hosts
+hosts:
+  - host: https://cloud.estimote.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+  - host: https://estimote.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        note: >-
+          Returns 200 but serves the site's HTML application shell (soft-404), not a valid
+          RFC 9116 security.txt. Not recorded as a security.txt hit.
+  - host: https://developer.estimote.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+notes: >-
+  No valid /.well-known/ discovery documents (security.txt, openid-configuration,
+  oauth-authorization-server, api-catalog, ai-plugin.json) are published on Estimote hosts.
