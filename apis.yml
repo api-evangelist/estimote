@@ -1,14 +1,12 @@
 aid: estimote
 name: Estimote
-description: >-
-  Estimote is a proximity and indoor-location company founded in 2012 that designs Bluetooth
-  Low Energy, Ultra-Wideband (UWB) and LTE-M/NB-IoT beacons together with the Estimote Cloud
-  platform for managing them at fleet scale. The Estimote Cloud REST API lets developers list
-  and configure registered devices, attach contextual key/value data (Attachments) to
-  individual beacons, and consume events reported by LTE beacons, authenticated with an App ID
-  and App Token over HTTP Basic or, in private beta, OAuth 2.0. Native SDKs for iOS, Android,
-  React Native and UWB deliver on-device proximity, indoor positioning, secure iBeacon/Eddystone
-  broadcasting and beacon fleet management. Estimote is backed by a16z and Homebrew.
+description: Estimote is a proximity and indoor-location company founded in 2012 that designs Bluetooth
+  Low Energy, Ultra-Wideband (UWB) and LTE-M/NB-IoT beacons together with the Estimote Cloud platform
+  for managing them at fleet scale. The Estimote Cloud REST API lets developers list and configure registered
+  devices, attach contextual key/value data (Attachments) to individual beacons, and consume events reported
+  by LTE beacons, authenticated with an App ID and App Token over HTTP Basic or, in private beta, OAuth
+  2.0. Native SDKs for iOS, Android, React Native and UWB deliver on-device proximity, indoor positioning,
+  secure iBeacon/Eddystone broadcasting and beacon fleet management. Estimote is backed by a16z and Homebrew.
 url: https://raw.githubusercontent.com/api-evangelist/estimote/refs/heads/main/apis.yml
 accessModel:
   pricing: unknown
@@ -32,7 +30,7 @@ x-tier: enriched
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-08'
 tags:
 - Company
 - Location
@@ -46,10 +44,9 @@ tags:
 - Developer Tools
 apis:
 - name: Estimote Cloud API
-  description: >-
-    REST API for managing Estimote devices (beacons): list and configure devices, associate
-    cloud Attachments (custom key/value data) with a device, and read events reported by LTE
-    beacons. Authenticated with App ID + App Token (HTTP Basic) or OAuth 2.0 (private beta).
+  description: 'REST API for managing Estimote devices (beacons): list and configure devices, associate
+    cloud Attachments (custom key/value data) with a device, and read events reported by LTE beacons.
+    Authenticated with App ID + App Token (HTTP Basic) or OAuth 2.0 (private beta).'
   humanURL: https://developer.estimote.com/
   baseURL: https://cloud.estimote.com
   tags:
@@ -109,8 +106,20 @@ common:
   url: data-model/estimote-data-model.yml
 - type: DomainSecurity
   url: security/estimote-domain-security.yml
+- type: Webhooks
+  url: asyncapi/estimote-lte-events-webhooks.yml
+- type: Community
+  url: https://forums.estimote.com/
+- type: Login
+  url: https://cloud.estimote.com/#/login
+- type: TermsOfService
+  url: https://estimote.com/terms/
+- type: PrivacyPolicy
+  url: https://estimote.com/privacy/
 x-enrichment:
   date: '2026-07-19'
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-merged-from:
+- estimote-inc
