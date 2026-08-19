@@ -2,30 +2,35 @@ generated: '2026-07-19'
 method: derived
 status: candidate
 source: https://cloud.estimote.com/docs/
-note: >-
-  Estimote publishes no official hosted or remote MCP server. The tools below are a
-  CANDIDATE surface derived from documented Estimote Cloud REST endpoints (apiDoc reference
-  at cloud.estimote.com/docs), not an operating server. Authentication would use App ID +
-  App Token (HTTP Basic) or the private-beta OAuth 2.0 bearer token.
+note: Estimote publishes no official hosted or remote MCP server. The tools below are a CANDIDATE surface
+  derived from documented Estimote Cloud REST endpoints (apiDoc reference at cloud.estimote.com/docs),
+  not an operating server. Authentication would use App ID + App Token (HTTP Basic) or the private-beta
+  OAuth 2.0 bearer token.
 server:
   name: estimote-cloud
   transport: http
 tools:
-  - name: list_devices
-    description: List all devices (beacons) in the authenticated Estimote Cloud account.
-    source_operation: GET https://cloud.estimote.com/v2/devices
-  - name: get_device
-    description: Get the settings and status of a single device by its identifier.
-    source_operation: GET https://cloud.estimote.com/v2/devices/{identifier}
-  - name: update_device_settings
-    description: Update the settings of a device (broadcast, power, attachments) by identifier.
-    source_operation: POST https://cloud.estimote.com/v2/devices/{identifier}
-  - name: get_device_events
-    description: Retrieve events reported by an LTE Beacon to Estimote Cloud.
-    source_operation: GET https://cloud.estimote.com/docs/#api-LTE-getDeviceEvents
-  - name: create_attachment
-    description: Create a cloud attachment associating custom key/value data with a device.
-    source_operation: POST https://cloud.estimote.com/v3/attachments
-  - name: get_attachment
-    description: Retrieve a specific attachment by its attachment id.
-    source_operation: GET https://cloud.estimote.com/v3/attachments/{attachment_id}
+- name: list_devices
+  description: List all devices (beacons) in the authenticated Estimote Cloud account.
+  source_operation: GET https://cloud.estimote.com/v2/devices
+- name: get_device
+  description: Get the settings and status of a single device by its identifier.
+  source_operation: GET https://cloud.estimote.com/v2/devices/{identifier}
+- name: update_device_settings
+  description: Update the settings of a device (broadcast, power, attachments) by identifier.
+  source_operation: POST https://cloud.estimote.com/v2/devices/{identifier}
+- name: get_device_events
+  description: Retrieve events reported by an LTE Beacon to Estimote Cloud.
+  source_operation: GET https://cloud.estimote.com/docs/#api-LTE-getDeviceEvents
+- name: create_attachment
+  description: Create a cloud attachment associating custom key/value data with a device.
+  source_operation: POST https://cloud.estimote.com/v3/attachments
+- name: get_attachment
+  description: Retrieve a specific attachment by its attachment id.
+  source_operation: GET https://cloud.estimote.com/v3/attachments/{attachment_id}
+deployment:
+  mode: none
+  verified: derived
+  tools: 6
+  checked: '2026-08-12'
+  source: catalog MCP census
