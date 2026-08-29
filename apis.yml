@@ -8,6 +8,17 @@ description: Estimote is a proximity and indoor-location company founded in 2012
   2.0. Native SDKs for iOS, Android, React Native and UWB deliver on-device proximity, indoor positioning,
   secure iBeacon/Eddystone broadcasting and beacon fleet management. Estimote is backed by a16z and Homebrew.
 url: https://raw.githubusercontent.com/api-evangelist/estimote/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
