@@ -64,6 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Estimote is a company surfaced as a portfolio company of a16z, homebrew and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Estimote is a proximity and indoor-location company founded in 2012 that designs Bluetooth Low Energy, Ultra-Wideband (UWB) and LTE-M/NB-IoT beacons together with the Estimote Cloud platform for managing them at fleet scale. The Estimote Cloud REST API lets developers list and configure registered devices, attach contextual key/value data (Attachments) to individual beacons, and consume events reported by LTE beacons, authenticated with an App ID and App Token over HTTP Basic or, in private beta, OAuth 2.0. Native SDKs for iOS, Android, React Native and UWB deliver on-device proximity, indoor positioning, secure iBeacon/Eddystone broadcasting and beacon fleet management. Estimote is backed by a16z and Homebrew.
 
-Backed by: a16z, homebrew — https://estimote.com
+**Areas:** Company · Location · Proximity · Beacons · Bluetooth · IoT · Indoor Location · UWB · Asset Tracking · Developer Tools
+
+## Estimote on APIs.io
+
+Everything profiled for Estimote is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/estimote/](https://apis.io/providers/estimote/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Estimote Cloud API](https://apis.io/apis/estimote/estimote-cloud-api/) — REST API for managing Estimote devices (beacons): list and configure devices, associate cloud Attachments (custom key/value data) with a device, and read…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Estimote Lte Events Webhooks](https://apis.io/asyncapis/estimote/estimote-lte-events-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [estimote-cloud](https://apis.io/servers/estimote/estimote-cloud/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Estimote Authentication](https://apis.io/security/estimote/estimote-authentication/)
+- [Estimote Domain Security](https://apis.io/security/estimote/estimote-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://estimote.com)
+- [Documentation](https://developer.estimote.com/)
+- [Getting started](https://developer.estimote.com/lte-beacon/quick-start/)
+- [API reference](https://cloud.estimote.com/docs/)
+- [Pricing](https://estimote.com/pricing)
+- [Sign up](https://cloud.estimote.com/)
+- [Support](https://forums.estimote.com/)
+- [Blog](https://blog.estimote.com/)
+- [Terms of service](https://estimote.com/terms/)
+- [Privacy policy](https://estimote.com/privacy/)
+- [GitHub](https://github.com/Estimote)
+
+## API Evangelist rating
+
+**Kin Score 34.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 61.9 |
+| Access clarity | 13.2 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/estimote/](https://apis.io/providers/estimote/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Estimote: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/estimote/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
